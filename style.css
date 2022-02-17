@@ -1,0 +1,46 @@
+.heading
+{
+    width: 100%;
+    text-align: left;
+}
+.heading h3
+{
+    display: inline;
+}
+.heading button
+{
+    float: right;
+    border: 1px solid white;
+}
+.big_image
+{
+    width: 100%;
+}
+#start,#status 
+{
+    font-size: 22px;
+}
+.blue
+{
+    text-align: justify;
+    color: black;
+}
+.copy_right_footer
+{
+    position: fixed;
+    color:rgb(24, 20, 20);
+    bottom: 0;
+    width: 100%;
+    background-color:red;
+    line-height: 3;
+    text-align: center;
+    font-family: bold;
+    font-size: 14px;
+}
+canvas
+{
+    border: 2px solid;
+    border-radius: 10px;
+    margin-top: 130px;
+    box-shadow: 5px 5px 5px rgb(92, 20, 173);
+}
