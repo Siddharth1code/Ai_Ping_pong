@@ -141,10 +141,6 @@ function gotPoses(result)
 		console.log("nosex = "+nosex+" ,nosey ="+nosey);
   }
 
-  function reset()
-  {
-    load(preload());
-  }
    //funtion paddleInCanvas call 
    paddleInCanvas();
  
