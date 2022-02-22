@@ -83,9 +83,9 @@ var ball = {
 }
 
 function setup(){
-  var canvas =  createCanvas(700,600);
+  createCanvas(700,600);
 
-  video=createCanvas(VIDEO);
+  video=createCapture(VIDEO);
   video.hide();
   poseNet=ml5.poseNet(video,modelloaded);
 	poseNet.on('pose',gotPoses);
@@ -93,6 +93,7 @@ function setup(){
 
 function draw(){
 
+  image(video,0,0,700,600);
  background(0); 
 
  fill("black");
@@ -138,6 +139,11 @@ function gotPoses(result)
 		nosex=results[0].pose.nose.x;
 		nosey=results[0].pose.nose.y;
 		console.log("nosex = "+nosex+" ,nosey ="+nosey);
+  }
+
+  function reset()
+  {
+    load(preload());
   }
    //funtion paddleInCanvas call 
    paddleInCanvas();
